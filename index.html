@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nevin Thomas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/2b3c29eec9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#home"><img src="images/logo.png" class="logo" alt="" /></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer | Data Analyst | Music Producer</p>
+                <h1>Hi, I'm <span>Nevin</span><br />Thomas</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/drawing.svg" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a BCA graduate,looking for a role that can help me improve my
+                        knowledge, skills, and experience in this field. I am adept at
+                        working as part of a creative team to accomplish goals,
+                        hard-working, enthusiastic, and motivated with strong
+                        organizational and communication skills
+                    </p>
+                    <div class="tab-titles">
+                        <a class="tab-links active-link" onclick="opentab('skills')">Skills</a>
+                        <a class="tab-links" onclick="opentab('experience')">Experience</a>
+                        <a class="tab-links" onclick="opentab('education')">Education</a>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br /></li>
+                            <li><span>R</span><br /></li>
+                            <li><span>HTML/CSS</span><br /></li>
+                            <li><span>SQL</span><br /></li>
+                            
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br />Data Analyst Intern
+                            <p></p>
+                        </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><span>2019 - 2022</span><br />BCA from SB college</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam libero, ab repellat assumenda perferendis architecto dolores voluptatum inventore, fugit tenetur dignissimos vitae, ipsa veniam est praesentium voluptatem consequuntur saepe.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam libero, ab repellat assumenda perferendis architecto dolores voluptatum inventore, fugit tenetur dignissimos vitae, ipsa veniam est praesentium voluptatem consequuntur saepe.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam libero, ab repellat assumenda perferendis architecto dolores voluptatum inventore, fugit tenetur dignissimos vitae, ipsa veniam est praesentium voluptatem consequuntur saepe.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img id="work-1" src="images/work-1.png" alt="" />
+                    <div class="layer">
+                        <h3>Covid Dasbaord</h3>
+                        <p>Created a covid dasboard using Tableau</p>
+                        <a target="_blank"
+                            href="https://public.tableau.com/app/profile/nevin8666/viz/CovidDashboard_16657301477920/Dashboard1"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="" />
+                    <div class="layer">
+                        <h3>Question Pool Generator</h3>
+                        <p>Helps in creating question paper for exams</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="" />
+                    <div class="layer">
+                        <h3>Tribute Page</h3>
+                        <p>Created a tributary page </p>
+                        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    -->
+
+    <!-- -----contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nevin2001t@gmail.com</p>
+                    
+                    <div class="social-icons">
+                        
+                        <a href="https://www.linkedin.com/in/nevin-thomas-66180b222/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_nevint/"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                    <a href="images/NevinThomas_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developed by Nevin Thomas<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</body>
+
+</html>
